@@ -1,0 +1,64 @@
+<<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>메뉴 주문하기</title>
+
+</head>
+
+    <h3 align="center">메뉴 정하기</h3>
+
+<table border="1">
+    <tr>
+        <th>메뉴</th> <th>가격</th> <th>수량</th>
+    </tr>
+    <tr>
+        <th>돈까스 도시락</th> <th>5500원</th><rh></rh>
+    </tr>
+    <tr>
+        <th>함박 스테이크 도시락</th> <th>6500원</th><rh></rh>
+    </tr>
+    <tr>
+        <th>불고기 도시락</th> <th>5000원</th><rh></rh>
+    </tr>
+    <tr>
+        <th>전주 비빔밥</th> <th>5000원</th><rh></rh>
+    </tr>
+    <tbody id= "Addi"></tbody>
+</table>
+
+    
+<hr>	
+
+<div align="center">
+
+	<input type="button"  onclick="Add()" id="insert" name="addbtn" value="추가하기" />
+
+</div>
+
+    
+<script type= 'text/javascript'>
+function Add(){
+    var Table;
+    Table = document.all["Addi"].insertRow();
+    
+    //메뉴
+    var Table_ln = Table.insertCell();
+    Table_ln.innerHTML="<input type='text' id=add_ln name=add_ln size='10' value=''/>";
+    
+    //가격
+    var Table_pr = Table.insertCell();
+    Table_pr.innerHTML="<input type='text' id=add_pr name=add_pr size='10' value=''/>";
+    
+    //수량
+    var Table_qu = Table.insertCell();
+    Table_qu.innerHTML="<input type='text' id=add_qu name=add_qu size='10' value=''/>";
+    
+}
+</script>
+
+
